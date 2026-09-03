@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Intro from "@/components/landing/Intro";
+import ModeSelector from "@/components/landing/ModeSelector";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-3xl font-bold">oi :)</h1>
+    <main className="relative h-screen w-full overflow-hidden bg-[#14161B]">
+      <Intro />
+      <ModeSelector />
     </main>
   );
 }
