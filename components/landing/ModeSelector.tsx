@@ -15,7 +15,7 @@ export default function ModeSelector() {
 
       <div className="relative hidden h-screen w-full overflow-hidden md:flex">
         <Link
-          href="/conventional"
+          href="/essencial"
           onMouseEnter={() => setActive("conventional")}
           onMouseLeave={() => setActive(null)}
           onFocus={() => setActive("conventional")}
@@ -45,7 +45,7 @@ export default function ModeSelector() {
         </Link>
 
         <Link
-          href="/explore"
+          href="/explorar"
           onMouseEnter={() => setActive("explore")}
           onMouseLeave={() => setActive(null)}
           onFocus={() => setActive("explore")}

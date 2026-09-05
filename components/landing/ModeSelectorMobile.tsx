@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function ModeSelectorMobile() {
   return (
-    <div className="flex h-dvh w-full flex-col overflow-hidden md:hidden">
+    <div className="flex h-full w-full flex-col overflow-hidden md:hidden">
       <Link
-        href="/conventional"
+        href="/essencial"
         className="group relative flex flex-1 flex-col justify-center overflow-hidden bg-[#E9EEF2] text-[#1B2733] active:bg-[#DFE6EC] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1B2733] focus-visible:ring-inset"
         style={{
           backgroundImage:
@@ -16,7 +16,7 @@ export default function ModeSelectorMobile() {
         }}
       >
         <div className="relative z-10 flex flex-col items-start px-6 py-4">
-          <p className="font-sf text-3xl tracking-wider">Essencial</p>
+          <p className="font-sf text-2xl tracking-wider">Essencial</p>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-[#3E4C59] font-sfRegular">
             Um portfólio direto ao ponto, com uma visão geral do meu trabalho
             e experiência.
@@ -28,14 +28,14 @@ export default function ModeSelectorMobile() {
       </Link>
 
       <Link
-        href="/explore"
-        className="group relative mt-[2vh] flex flex-1 flex-col justify-center bg-[#14161B] text-[#E7E9E4] active:bg-[#1C1F26] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7FFFC4] focus-visible:ring-inset"
+        href="/explorar"
+        className="group relative -mt-2 flex flex-1 flex-col justify-center bg-[#14161B] text-[#E7E9E4] active:bg-[#1C1F26] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7FFFC4] focus-visible:ring-inset"
         style={{
           clipPath: "polygon(0 8%, 100% 0, 100% 100%, 0 100%)",
         }}
       >
         <div className="relative z-10 flex flex-col items-start px-6 py-4">
-          <p className="text-3xl text-[#FFB86B] tracking-wider font-sf">
+          <p className="text-2xl text-[#FFB86B] tracking-wider font-sf">
             Explorar
           </p>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-[#9AA1AC] font-sfRegular">
