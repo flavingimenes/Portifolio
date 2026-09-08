@@ -44,7 +44,7 @@ export function Hero() {
   </span>
 
   <span className="block">
-    Flávio Gabriel
+    Flávio Gimenes
   </span>
 
   <span className="block text-right text-[17px] text-[#6E7075] font-sfRegular">

@@ -77,7 +77,7 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
         >
           <div className="mb-4 flex items-center gap-3">
             <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#6E7075]">
-              Projeto
+              {project.tipe}
             </span>
           </div>
 

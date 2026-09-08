@@ -41,14 +41,19 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#E4E2DD] bg-[#FAFAF8]/90 backdrop-blur-sm">
-      <div className="mx-auto grid max-w-275 grid-cols-[1fr_auto_1fr] items-center px-6 py-4">
-        <a
-          href="#topo"
-          className="justify-self-start text-[15px] font-semibold tracking-tight text-[#16181B]"
-          style={{ fontFamily: "var(--font-serif)" }}
-        >
-          Flávio Gabriel
-        </a>
+      <div className="mx-auto grid max-w-275 grid-cols-[1fr_auto_1fr] items-center px-6 py-3">
+        <div className="flex items-center gap-3">
+          <a
+            href="#topo"
+            className="justify-self-start text-[24px] font-semibold tracking-tight text-[#16181B] font-sf"
+           
+          >
+            Flávio Gimenes
+            <p className="-mt-3 text-[18px] text-end font-normal text-[#6E7075] font-sfRegular">
+              portifolio 2026
+            </p>
+          </a>
+        </div>
 
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
