@@ -26,7 +26,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "zgmotos-os",
-    name: "Zero Grau Motos",
+    name: "ZGMotos OS",
     summary:
       "Sistema de pedidos e orçamentos para uma oficina de motos, substituindo o controle em papel por um fluxo único de clientes, motos, produtos e histórico.",
     problem:
@@ -34,22 +34,36 @@ export const projects: Project[] = [
     contribution:
       "Projetei e implementei sozinho o sistema completo: modelagem do banco com Prisma, cadastro de clientes e motos vinculados, montagem de pedidos com múltiplos itens, histórico editável e impressão do orçamento, além do deploy em produção.",
     stack: ["Next.js", "React", "TypeScript", "Prisma", "SQLite/Turso"],
-    liveUrl: "https://projeto-zgmotos-os-dy3d.vercel.app",
     repoUrl: "https://github.com/flavingimenes/projeto-zgmotos-os",
-    image: "/images/project-zgmotos.jpg",
+    image: "/images/essencial/zg-motos-print.png",
   },
   {
-    slug: "landing-pages-comercios",
-    name: "Sites para comércios locais",
-    summary:
-      "Landing pages sob encomenda para pequenos negócios de Cuiabá e Várzea Grande que ainda dependiam só de redes sociais para serem encontrados.",
-    problem:
-      "Comércios locais perdiam clientes por não terem uma página própria: sem endereço, horário e contato reunidos em um único lugar acessível por link.",
-    contribution:
-      "Conduzi o processo do início ao fim — conversa com o dono do negócio, definição do conteúdo, layout responsivo e publicação, cuidando para que cada site refletisse o negócio real e não um modelo genérico.",
-    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    image: "/images/project-landing-pages.jpg",
-  },
+slug: "nexus-rpg",
+name: "Nexus RPG",
+summary:
+"Plataforma de aprendizado de programação que transforma conteúdos e exercícios em uma jornada gamificada, com planetas, missões, desafios e progressão do usuário.",
+problem:
+"O aprendizado de programação pode se tornar pouco envolvente quando baseado apenas em conteúdos e exercícios tradicionais. O projeto buscou tornar essa experiência mais interativa, criando uma jornada na qual o estudante pudesse aprender enquanto explora, completa missões e acompanha sua própria evolução.",
+contribution:
+"Participei do desenvolvimento de uma solução integrada entre aplicativo mobile, landing page e backend, trabalhando com autenticação, consumo de API, fluxo de missões, progressão do usuário e organização da interface. O projeto também envolveu integração entre diferentes tecnologias e persistência dos dados em banco relacional.",
+stack: [
+"React Native",
+"Expo",
+"TypeScript",
+"Next.js",
+"React",
+"Tailwind CSS",
+"Java",
+"Spring Boot",
+"Spring Security",
+"JWT",
+"PostgreSQL"
+],
+liveUrl: "https://trabalho-univag-nexus.vercel.app/",
+repoUrl: "https://github.com/flavingimenes/TrabalhoUnivagNexus",
+image: "/images/essencial/nexus-rpg-print.png",
+},
+
 ];
 
 export type SkillGroup = {
