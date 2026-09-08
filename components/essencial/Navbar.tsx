@@ -40,7 +40,7 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#E4E2DD] bg-[#FAFAF8]/90 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-[#bdbdbc] bg-gray-500/20 backdrop-blur-sm">
       <div className="mx-auto grid max-w-275 grid-cols-[1fr_auto_1fr] items-center px-6 py-3">
         <div className="flex items-center gap-3">
           <a
@@ -50,7 +50,7 @@ export function Navbar() {
           >
             Flávio Gimenes
             <p className="-mt-3 text-[18px] text-end font-normal text-[#6E7075] font-sfRegular">
-              portifolio 2026
+              portifólio 2026
             </p>
           </a>
         </div>
@@ -60,7 +60,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[17px] text-[#4A4C50] transition-colors duration-200 hover:text-[#16181B]"
+              className="text-[17px] text-[#4A4C50] transition-colors duration-200 hover:text-[#16181B] font-bold"
             >
               {link.label}
             </a>
@@ -112,7 +112,7 @@ export function Navbar() {
         }`}
       >
         <div className="overflow-hidden">
-          <nav className="border-t border-[#E4E2DD] px-6 py-4">
+          <nav className="border-t border-[#a7a7a7] px-6 py-4">
             <div
               className={`flex flex-col gap-1 transition-transform duration-300 ${
                 isOpen ? "translate-y-0" : "-translate-y-3"
@@ -123,13 +123,13 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="py-2 text-[15px] text-[#16181B] transition-colors hover:text-[#2F5D50]"
+                  className="py-2 text-[15px] text-[#16181B] transition-colors hover:text-[#2F5D50] font-bold"
                 >
                   {link.label}
                 </a>
               ))}
 
-              <div className="mt-3 flex gap-3 border-t border-[#E4E2DD] pt-4">
+              <div className="mt-3 flex gap-3 border-t border-[#a7a7a7] pt-4">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
@@ -138,7 +138,7 @@ export function Navbar() {
                     rel="noopener noreferrer"
                     aria-label={social.label}
                     title={social.label}
-                    className={`flex h-9 w-9 items-center justify-center rounded-full border border-[#E4E2DD] ${social.color} transition-all duration-200 hover:scale-110 hover:bg-[#E4E2DD]`}
+                    className={`flex h-10 w-10 text-2xl items-center justify-center rounded-full border border-[#E4E2DD] ${social.color} transition-all duration-200 hover:scale-110 hover:bg-[#E4E2DD]`}
                   >
                     {social.icon}
                   </a>

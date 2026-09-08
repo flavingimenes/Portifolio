@@ -43,12 +43,12 @@ export const projects: Project[] = [
     slug: "nexus-rpg",
     name: "Nexus RPG",
     tipe: "Sistema web + mobile",
-summary:
+    summary:
       "Plataforma de aprendizado de programação que transforma conteúdos e exercícios em uma jornada gamificada, com planetas, missões, desafios e progressão do usuário.",
     problem:
       "O aprendizado de programação pode se tornar pouco envolvente quando baseado apenas em conteúdos e exercícios tradicionais. O projeto buscou tornar essa experiência mais interativa, criando uma jornada na qual o estudante pudesse aprender enquanto explora, completa missões e acompanha sua própria evolução.",
     contribution:
-      "Participei do desenvolvimento de uma solução integrada entre aplicativo mobile, landing page e backend, trabalhando com autenticação, consumo de API, fluxo de missões, progressão do usuário e organização da interface. O projeto também envolveu integração entre diferentes tecnologias e persistência dos dados em banco relacional.",
+      "Participei do desenvolvimento de uma solução integrada entre aplicativo mobile, landing page e backend, trabalhando com autenticação, consumo de API, fluxo de missões, progressão do usuário e organização da interface.",
     stack: [
       "React Native",
       "Expo",
@@ -68,19 +68,82 @@ summary:
   },
 ];
 
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiPrisma,
+  SiSqlite,
+  SiPostgresql,
+  SiTurso,
+  SiGit,
+  SiGithub,
+  SiVercel,
+  SiJavascript,
+  SiHtml5,
+  SiDbeaver,
+  SiMariadb,
+  SiLinux,
+} from "react-icons/si";
+import type { IconType } from "react-icons";
+import { FaCss3Alt } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+
+export type Skill = {
+  name: string;
+  icon: IconType;
+};
+
 export type SkillGroup = {
   label: string;
-  items: string[];
+  items: Skill[];
 };
 
 export const skillGroups: SkillGroup[] = [
   {
     label: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    items: [
+      { name: "HTML5", icon: SiHtml5 },
+      { name: "CSS3", icon: FaCss3Alt},
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "React", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+    ],
   },
-  { label: "Backend", items: ["Node.js", "APIs REST", "Prisma"] },
-  { label: "Banco de dados", items: ["SQLite", "PostgreSQL", "Turso"] },
-  { label: "Ferramentas", items: ["Git", "GitHub", "Vercel"] },
+  {
+    label: "Backend",
+    items: [
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "APIs REST", icon: SiNodedotjs },
+      { name: "Prisma", icon: SiPrisma },
+    ],
+  },
+  {
+    label: "Banco de dados",
+    items: [
+      { name: "SQLite", icon: SiSqlite },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "MariaDB", icon: SiMariadb },
+      { name: "Turso", icon: SiTurso },
+    ],
+  },
+
+  {
+  label: "Ferramentas & Ambiente",
+  items: [
+    { name: "Git", icon: SiGit },
+    { name: "GitHub", icon: SiGithub },
+    { name: "Linux", icon: SiLinux },
+    { name: "VS Code", icon: VscVscode },
+    { name: "DBeaver", icon: SiDbeaver },
+    { name: "Vercel", icon: SiVercel },
+  ],
+},
 ];
 
 export type ExperienceItem = {
@@ -92,12 +155,13 @@ export type ExperienceItem = {
 
 export const experienceItems: ExperienceItem[] = [
   {
-    period: "2023 — atual",
+    period: "2023 — 2027",
     title: "Engenharia de Software",
-    place: "Graduação",
+    place: "Bacharelado",
     description:
-      "Formação em andamento com foco em desenvolvimento web, estruturas de dados e engenharia de sistemas.",
+      "Graduação em Engenharia de Software, com formação voltada ao desenvolvimento de software, desenvolvimento web, estruturas de dados, bancos de dados, arquitetura de sistemas e boas práticas de engenharia.",
   },
+
   {
     period: "2026",
     title: "Desenvolvimento independente",

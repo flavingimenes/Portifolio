@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import type { Project } from "./data";
 import { FaGithub } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 
 type ProjectCardProps = {
   project: Project;
@@ -118,7 +119,7 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
           </ul>
 
           {(project.liveUrl || project.repoUrl) && (
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               {project.liveUrl ? (
                 <a
                   href={project.liveUrl}
@@ -127,7 +128,7 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
                   className="
                     inline-flex items-center gap-2
                     bg-[#16181B]
-                    px-5 py-2.5
+                    px-7 py-2.5
                     text-[13px] font-medium text-[#FAFAF8]
                     transition-all duration-300
                     hover:-translate-y-0.5
@@ -179,18 +180,23 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
               onClick={() => setIsOpen(false)}
               className="
                 absolute -right-3 -top-3 z-10
-                flex h-10 w-10 items-center justify-center
-                rounded-full
-                bg-white
-                text-xl text-[#16181B]
-                shadow-lg
-                transition-transform
+                flex h-11 w-11 items-center justify-center
+                rounded-lg
+                border border-white/20
+                bg-red-500
+                text-white
+                shadow-lg shadow-black/20
+                backdrop-blur-sm
+                transition-all duration-200 ease-out
                 hover:scale-105
+                hover:bg-red-600
+                hover:shadow-xl hover:shadow-black/25
+                active:scale-95
                 cursor-pointer
               "
               aria-label="Fechar imagem"
             >
-              X
+              <IoMdClose className="text-2xl" />
             </button>
 
             <Image

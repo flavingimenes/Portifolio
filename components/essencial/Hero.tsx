@@ -8,7 +8,13 @@ import { FolderCode } from "lucide-react"
 export function Hero() {
 
   function Saudacao() {
-    const hora = new Date().getHours()
+    const hora = Number(
+      new Intl.DateTimeFormat("pt-BR", {
+        hour: "numeric",
+        hour12: false,
+        timeZone: "America/Sao_Paulo",
+      }).format(new Date())
+    )
 
     if (hora >= 5 && hora < 12) {
       return "Bom dia"
