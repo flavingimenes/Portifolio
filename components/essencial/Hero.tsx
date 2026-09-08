@@ -1,9 +1,26 @@
 import Image from "next/image"
 
-import { FiPhone } from "react-icons/fi"
+import { FiFolder, FiPhone } from "react-icons/fi"
 import { FolderCode } from "lucide-react"
 
+
+
 export function Hero() {
+
+  function Saudacao() {
+    const hora = new Date().getHours()
+
+    if (hora >= 5 && hora < 12) {
+      return "Bom dia"
+    } else if (hora >= 12 && hora < 18) {
+      return "Boa tarde"
+    } else if (hora >= 18 && hora < 24) {
+      return "Boa noite"
+    } else {
+      return "Boa madrugada"
+    }
+  }
+
   return (
     <section
       id="topo"
@@ -23,7 +40,7 @@ export function Hero() {
 
          <h1 className="mt-3 text-[44px] leading-[1.05] text-[#16181B] sm:text-[56px] md:text-[64px] font-sf">
   <span className="block text-left text-[25px] text-[#6E7075] font-sf">
-    Prazer, eu sou
+    {Saudacao()}! Me chamo
   </span>
 
   <span className="block">
@@ -44,17 +61,15 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-6">
             <a
               href="#projetos"
-              className="rounded-md bg-[#16181B] px-8 py-3 text-[14px] font-medium text-[#FAFAF8] transition-all duration-300 hover:bg-[#2F5D50] hover:-translate-y-0.5"
+              className="rounded-md bg-[#16181B] px-10 py-3 text-[15px] font-medium text-[#FAFAF8] transition-all duration-300 hover:bg-[#2F5D50] hover:-translate-y-0.5"
             >
-              <FolderCode className="mr-2 inline-block" />
               Projetos
             </a>
 
             <a
               href="#contato"
-              className="rounded-md border border-black px-8 py-3 text-[14px] font-medium text-black transition-all duration-300 hover:bg-[#99cabc] hover:-translate-y-0.5"
+              className="rounded-md border border-black px-10 py-3 text-[15px] font-medium text-black transition-all duration-300 hover:bg-[#bab9b9] hover:-translate-y-0.5"
             >
-              <FiPhone className="mr-2 inline-block text-[20px]" />
               Contato
             </a>
           </div>
