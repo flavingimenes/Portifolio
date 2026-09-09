@@ -3,17 +3,16 @@ import Image from "next/image"
 import { FiFolder, FiPhone } from "react-icons/fi"
 import { FolderCode } from "lucide-react"
 
-
-
 export function Hero() {
-
   function Saudacao() {
+    const partes = new Intl.DateTimeFormat("pt-BR", {
+      hour: "2-digit",
+      hour12: false,
+      timeZone: "America/Cuiaba",
+    }).formatToParts(new Date())
+
     const hora = Number(
-      new Intl.DateTimeFormat("pt-BR", {
-        hour: "numeric",
-        hour12: false,
-        timeZone: "America/Sao_Paulo",
-      }).format(new Date())
+      partes.find((parte) => parte.type === "hour")?.value ?? 0
     )
 
     if (hora >= 5 && hora < 12) {
@@ -33,7 +32,6 @@ export function Hero() {
       className="mx-auto max-w-275 px-6 pb-20 pt-16 md:pb-28 md:pt-24"
     >
       <div className="grid gap-10 md:grid-cols-2 md:items-center">
-
         <Image
           src="/images/flavio-gabriel.jpg"
           alt="Flávio Gabriel"
@@ -43,20 +41,19 @@ export function Hero() {
         />
 
         <div className="md:pr-8 lg:pr-16">
+          <h1 className="mt-3 text-[44px] leading-[1.05] text-[#16181B] sm:text-[56px] md:text-[64px] font-sf">
+            <span className="block text-left text-[25px] text-[#6E7075] font-sf">
+              {Saudacao()}! Me chamo
+            </span>
 
-         <h1 className="mt-3 text-[44px] leading-[1.05] text-[#16181B] sm:text-[56px] md:text-[64px] font-sf">
-  <span className="block text-left text-[25px] text-[#6E7075] font-sf">
-    {Saudacao()}! Me chamo
-  </span>
+            <span className="block">
+              Flávio Gimenes
+            </span>
 
-  <span className="block">
-    Flávio Gimenes
-  </span>
-
-  <span className="block text-right text-[17px] text-[#6E7075] font-sfRegular">
-    Engenheiro de Software
-  </span>
-</h1>
+            <span className="block text-right text-[17px] text-[#6E7075] font-sfRegular">
+              Engenheiro de Software
+            </span>
+          </h1>
 
           <p className="mt-6 max-w-[52ch] text-[17px] leading-relaxed text-[#3E4044] md:text-[19px]">
             Estudo, desenvolvo e coloco ideias para funcionar. Desenvolvedor
