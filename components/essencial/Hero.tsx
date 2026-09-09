@@ -64,14 +64,14 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-6">
             <a
               href="#projetos"
-              className="rounded-md bg-[#16181B] px-10 py-3 text-[15px] font-medium text-[#FAFAF8] transition-all duration-300 hover:bg-[#2F5D50] hover:-translate-y-0.5"
+              className="rounded-md bg-[#16181B] px-10 py-3 text-[15px] font-sf text-[#FAFAF8] transition-all duration-300 hover:bg-[#2F5D50] hover:-translate-y-0.5"
             >
               Projetos
             </a>
 
             <a
               href="#contato"
-              className="rounded-md border border-black px-10 py-3 text-[15px] font-medium text-black transition-all duration-300 hover:bg-[#bab9b9] hover:-translate-y-0.5"
+              className="rounded-md border border-black px-10 py-3 text-[15px] font-sf text-black transition-all duration-300 hover:bg-[#bab9b9] hover:-translate-y-0.5"
             >
               Contato
             </a>

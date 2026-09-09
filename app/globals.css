@@ -28,8 +28,8 @@
 }
 
 @font-face {
-    font-family: "SFRegular";
-    src: url("/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF") format("truetype");
+    font-family: "SFMedium";
+    src: url("/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF") format("truetype");
     font-weight: 400;
     font-style:normal;
 }
@@ -38,8 +38,8 @@
   font-family: "SFBold", sans-serif;
 }
 
-.font-sfRegular {
-  font-family: "SFRegular", sans-serif;
+.font-sfMedium {
+  font-family: "SFMedium", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

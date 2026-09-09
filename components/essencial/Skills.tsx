@@ -22,10 +22,10 @@ export function Skills() {
                   return (
                     <li
                       key={item.name}
-                      className="flex items-center gap-3 text-[16px] text-[#16181B]"
+                      className="flex items-center gap-3 text-[18px] text-[#16181B] font-sfMedium mb-2"
                     >
                       <Icon
-                        className="h-4.5 w-4.5 shrink-0 text-[#6E7075]"
+                        className="h-5.5 w-4.5 shrink-0 text-[#6E7075]"
                         aria-hidden="true"
                       />
 

@@ -172,25 +172,28 @@ export const experienceItems: ExperienceItem[] = [
 ];
 
 export const approachPoints = [
-  {
-    title: "Entender antes de codar",
-    description:
-      "Prefiro mapear o problema real e como as pessoas vão usar o sistema antes de decidir qual tecnologia entra no projeto.",
-  },
-  {
-    title: "Simples primeiro",
-    description:
-      "Começo pela solução mais direta que resolve o problema e só adiciono complexidade quando ela realmente se justifica.",
-  },
-  {
-    title: "Pensando em quem mantém depois",
-    description:
-      "Código organizado e nomes claros importam tanto quanto a funcionalidade — inclusive quando esse alguém sou eu mesmo, meses depois.",
-  },
+{
+title: "Entender antes de executar",
+description:
+"Antes de pensar em tecnologia, procuro entender o problema, o objetivo do projeto e como ele vai ser usado na prática.",
+},
+
+{
+title: "Começar pelo simples",
+description:
+"Gosto de começar com uma solução simples e funcional. Se algo mais complexo for necessário, adiciono depois.",
+},
+
+{
+title: "Trabalho pensado à longo prazo",
+description:
+"Organização e nomes claros fazem diferença. Principalmente quando preciso voltar ao projeto meses depois e entender o que eu mesmo fiz.",
+},
 ];
 
+
 export const contactLinks = {
-  email: "flavio.gimenes@example.com",
+  email: "gflavio581@gmail.com",
   github: "https://github.com/flavingimenes",
   linkedin: "https://linkedin.com/in/flaviogimenes",
 };

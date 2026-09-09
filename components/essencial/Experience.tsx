@@ -16,11 +16,11 @@ export function Experience() {
               key={item.title}
               className="grid gap-1 border-t border-[#E4E2DD] py-6 first:border-t-0 first:pt-0 sm:grid-cols-[140px_minmax(0,1fr)] sm:gap-6"
             >
-              <p className="text-[13px] text-[#6E7075]">{item.period}</p>
+              <p className="text-[13px] text-[#6E7075] font-sf">{item.period}</p>
               <div>
-                <p className="text-[16px] text-[#16181B]">
+                <p className="text-[18px] text-[#16181B] font-sfMedium">
                   {item.title}
-                  <span className="text-[#6E7075]"> — {item.place}</span>
+                  <span className="text-[#6E7075]"> - {item.place}</span>
                 </p>
                 <p className="mt-2 max-w-[56ch] text-[15px] leading-relaxed text-[#3E4044]">
                   {item.description}

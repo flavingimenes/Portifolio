@@ -5,9 +5,9 @@ export function Footer() {
 
   return (
     <footer className="bg-[#16181B] text-[#8A8C8F]">
-      <div className="mx-auto flex max-w-[1100px] flex-col gap-3 px-6 py-8 text-[13px] sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto flex max-w-275 flex-col gap-3 px-6 py-8 text-[13px] sm:flex-row sm:items-center sm:justify-between">
         <p>
-          Flávio Gabriel — {year}
+          Flávio Gimenes - {year}
         </p>
         <div className="flex gap-5">
           <a

@@ -2,7 +2,7 @@ export function About() {
   return (
     <section id="sobre" className="border-t border-[#E4E2DD]">
       <div className="mx-auto grid max-w-275 gap-6 px-6 py-16 md:grid-cols-[220px_minmax(0,1fr)] md:gap-12 md:py-24">
-       <h2 className="text-[22px] md:text-3xl text-[#16181B] font-sf text-center self-center">
+       <h2 className="text-[22px] md:text-3xl text-[#16181B] font-sf text-center">
           Sobre
         </h2>
         <div className="max-w-[62ch] space-y-5 text-[16px] leading-relaxed text-[#3E4044] md:text-[17px]">
