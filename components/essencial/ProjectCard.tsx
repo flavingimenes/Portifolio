@@ -126,11 +126,11 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
                   className="
                     inline-flex items-center gap-2
                     rounded-md
-                    border border-[#E8C9A3]
+                    border border-blue-500
                     bg-[#FFF9F3]
                     px-4 py-2.5
                     text-[12px]
-                    text-[#9A6A38]
+                    text-blue-500
                   "
                 >
                   <BsExclamationTriangle
