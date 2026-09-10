@@ -20,6 +20,7 @@ export type Project = {
   contribution: string;
   stack: string[];
   liveUrl?: string;
+  noLiveUrl?: string;
   repoUrl?: string;
   image: string;
 };
@@ -36,6 +37,7 @@ export const projects: Project[] = [
     contribution:
       "Projetei e implementei sozinho o sistema completo: modelagem do banco com Prisma, cadastro de clientes e motos vinculados, montagem de pedidos com múltiplos itens, histórico editável e impressão do orçamento, além do deploy em produção.",
     stack: ["Next.js", "React", "TypeScript", "Prisma", "SQLite/Turso"],
+    noLiveUrl: "Sistema em produção, mas não acessível publicamente",
     repoUrl: "https://github.com/flavingimenes/projeto-zgmotos-os",
     image: "/images/essencial/zg-motos-print.png",
   },

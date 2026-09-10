@@ -5,6 +5,7 @@ import { useState } from "react";
 import type { Project } from "./data";
 import { FaGithub } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import { BsExclamationTriangle } from "react-icons/bs";
 
 type ProjectCardProps = {
   project: Project;
@@ -120,6 +121,26 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
 
           {(project.liveUrl || project.repoUrl) && (
             <div className="mt-8 flex flex-wrap items-center gap-4">
+              {project.noLiveUrl ? (
+                <div
+                  className="
+                    inline-flex items-center gap-2
+                    rounded-md
+                    border border-[#E8C9A3]
+                    bg-[#FFF9F3]
+                    px-4 py-2.5
+                    text-[12px]
+                    text-[#9A6A38]
+                  "
+                >
+                  <BsExclamationTriangle
+                    className="shrink-0 text-[14px]"
+                    aria-hidden="true"
+                  />
+
+                  <span>{project.noLiveUrl}</span>
+                </div>
+              ) : null}
               {project.liveUrl ? (
                 <a
                   href={project.liveUrl}
