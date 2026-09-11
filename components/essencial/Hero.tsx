@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export function Hero() {
-  function Saudacao() {
+  const [saudacao, setSaudacao] = useState("");
+
+  useEffect(() => {
     const partes = new Intl.DateTimeFormat("pt-BR", {
-      hour: "2-digit",
+      hour: "numeric",
       hour12: false,
       timeZone: "America/Cuiaba",
     }).formatToParts(new Date());
@@ -13,15 +18,15 @@ export function Hero() {
     );
 
     if (hora >= 5 && hora < 12) {
-      return "Bom dia";
+      setSaudacao("Bom dia");
     } else if (hora >= 12 && hora < 18) {
-      return "Boa tarde";
+      setSaudacao("Boa tarde");
     } else if (hora >= 18 && hora < 24) {
-      return "Boa noite";
+      setSaudacao("Boa noite");
     } else {
-      return "Boa madrugada";
+      setSaudacao("Boa madrugada");
     }
-  }
+  }, []);
 
   return (
     <section
@@ -29,11 +34,10 @@ export function Hero() {
       className="mx-auto max-w-275 px-6 pb-20 pt-16 md:pb-28 md:pt-24"
     >
       <div className="grid gap-10 md:grid-cols-2 md:items-center">
-
         <div className="order-1 md:order-2 md:pr-8 lg:pr-16">
           <h1 className="mt-3 text-[44px] leading-[1.05] text-[#16181B] sm:text-[56px] md:text-[64px] font-sf">
             <span className="block text-left text-[25px] text-[#6E7075] font-sf">
-              {Saudacao()}! Me chamo
+              {saudacao}! Me chamo
             </span>
 
             <span className="block">Flávio Gimenes</span>
@@ -66,7 +70,6 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Imagem */}
         <div className="order-2 flex justify-center md:order-1 md:justify-start">
           <Image
             src="/images/essencial/FGImg.jpeg"
