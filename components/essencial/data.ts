@@ -111,6 +111,7 @@ export const skillGroups: SkillGroup[] = [
       { name: "CSS3", icon: FaCss3Alt},
       { name: "JavaScript", icon: SiJavascript },
       { name: "React", icon: SiReact },
+      { name: "React Native", icon: SiReact },
       { name: "Next.js", icon: SiNextdotjs },
       { name: "TypeScript", icon: SiTypescript },
       { name: "Tailwind CSS", icon: SiTailwindcss },
@@ -169,7 +170,7 @@ export const experienceItems: ExperienceItem[] = [
     title: "Desenvolvimento independente",
     place: "Projetos próprios e freelance",
     description:
-      "Construção do Zero Grau Motos do zero e desenvolvimento de sites sob encomenda para comércios locais, atuando sozinho em todas as etapas — do planejamento ao deploy.",
+      "Construção e desenvolvimento de sites sob encomenda para comércios locais, atuando sozinho em todas as etapas, do planejamento ao deploy.",
   },
 ];
 

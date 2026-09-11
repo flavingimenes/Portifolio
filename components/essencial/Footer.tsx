@@ -1,38 +1,19 @@
-import { contactLinks } from "./data";
+import getDiaSemana from "@/lib/week"
 
 export function Footer() {
   const year = new Date().getFullYear();
+  const dia = new Date().getDay();
 
   return (
-    <footer className="bg-[#16181B] text-[#8A8C8F]">
-      <div className="mx-auto flex max-w-275 flex-col gap-3 px-6 py-8 text-[13px] sm:flex-row sm:items-center sm:justify-between">
-        <p>
-          Flávio Gimenes - {year}
+    <footer className="border-t border-[#2A2C30] bg-[#16181B] text-[#8A8C8F]">
+      <div className="mx-auto justify-between flex max-w-275 gap-5 px-6 py-7 text-[13px] leading-relaxed sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-[#77797D] md: text-center">
+          Flávio Gimenes <span className="mx-1 text-[#3E4044] hidden md:inline">—</span> {year}
         </p>
-        <div className="flex gap-5">
-          <a
-            href={contactLinks.github}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="transition-colors hover:text-[#FAFAF8]"
-          >
-            GitHub
-          </a>
-          <a
-            href={contactLinks.linkedin}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="transition-colors hover:text-[#FAFAF8]"
-          >
-            LinkedIn
-          </a>
-          <a
-            href={`mailto:${contactLinks.email}`}
-            className="transition-colors hover:text-[#FAFAF8]"
-          >
-            {contactLinks.email}
-          </a>
-        </div>
+
+        <p className="text-[#77797D] text-end">
+          Obrigado por ler até aqui, {getDiaSemana(dia)} :)
+        </p>
       </div>
     </footer>
   );

@@ -10,19 +10,17 @@ export function About() {
             Sou estudante de Engenharia de Software e desenvolvedor Full
             Stack. Gosto de projetos onde dá pra ver o problema de perto:
             entender como uma pessoa trabalha hoje, o que está travando esse
-            trabalho, e construir algo que substitua isso de verdade — não só
+            trabalho, e construir algo que substitua isso de verdade, não só
             mais uma tela bonita.
           </p>
           <p>
             Trabalho principalmente com Next.js, React e TypeScript no
-            frontend, e Prisma no backend. Prefiro entregar um sistema
+            frontend, e Typescript no backend. Prefiro entregar um sistema
             pequeno que funciona de ponta a ponta do que um projeto grande
             que fica pela metade.
           </p>
           <p>
-            Fora da faculdade, tenho usado esse tempo para construir projetos
-            reais para pessoas reais, incluindo um sistema próprio para uma
-            oficina de motos e sites para pequenos comércios da minha região.
+            Fora da faculdade, e no tempo livre, tenho usado esse tempo para construir projetos reais para pessoas reais.
           </p>
         </div>
       </div>
