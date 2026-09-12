@@ -8,6 +8,12 @@ export const DiaSemana: string[] = [
   "bom Sábado",
 ];
 
-export default function getDiaSemana(dia: number): string {
-  return DiaSemana[dia];
+export default function getDiaSemana(): string {
+  const data = new Date(
+    new Date().toLocaleString("en-US", {
+      timeZone: "America/Cuiaba",
+    })
+  );
+
+  return DiaSemana[data.getDay()];
 }
